@@ -22,6 +22,17 @@ mutation movies_scifi {
       thumbnail:"https://i.imgur.com/0RworbR.mp4"}) {
     value{title}
    }
+   
+  inception: insertmovies_by_genre(
+    value: { 
+      genre:"Sci-Fi", 
+      year:2010,
+      title:"Inception",
+      synopsis:"Cobb steals information from his targets by entering their dreams.",
+      duration:121,
+      thumbnail:"https://i.imgur.com/RPa4UdO.mp4"}) {
+    value{title}
+   }
   
   prometheus: insertmovies_by_genre(value: { 
       genre:"Sci-Fi", 
